@@ -27,11 +27,7 @@
     
     $.ajax({   
       type: "GET",  
-        url: "/hi/my_function.php",  // URL with /hi/ path
-        data: { 
-            param: my_param,  // Your custom parameter
-            id: event_id      // Including the event_id if needed
-        },     
+        url: "http://10into.com/hi/my_function.php?param=some_value&id=9",  // URL with /hi/ path   
         
     success: function(result) {   
         getModal();
