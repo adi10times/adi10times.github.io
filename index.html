@@ -27,7 +27,11 @@
     
     $.ajax({   
       type: "GET",  
-        url: "http://10into.com/hi/my_function.php?param=some_value&id=9",  // URL with /hi/ path   
+      url: "./hi/my_function.php",  // Relative path in development environment
+      data: { 
+          param: "some_value",  
+          id: 9  
+      },  
         
     success: function(result) {   
         getModal();
